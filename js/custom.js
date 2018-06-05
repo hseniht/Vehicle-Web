@@ -10,9 +10,19 @@
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
+          console.log("Failed, not validated");
         }
         form.classList.add('was-validated');
       }, false);
     });
   }, false);
 })();
+
+
+// $("form").on('submit', function(){
+//    $('.exampleModalCenter').show();
+// });
+//
+// $(window).load(function(){
+//      $('#exampleModalCenter').modal('show');
+// });
