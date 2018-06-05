@@ -1,6 +1,7 @@
 
 .pricing-header {
     max-width: 700px;
+    min-height: 500px;
 }
 
 .box-shadow {
@@ -29,10 +30,36 @@
   font-size: smaller;
 }
 
+/*For modal box */
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+
+/* .login-form-container {
+  max-width: 275px;
+  margin: 0 auto;
+} */
+/* ===== FOOTER ==== */
 footer a {
   color:white;
 }
-
 
 
 /* Sticky footer styles
@@ -51,6 +78,6 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   /* height: 60px; */
-  /* line-height: 60px; /* Vertically center the text there */ 
+  /* line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
 }
