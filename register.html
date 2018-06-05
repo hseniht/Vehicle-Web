@@ -18,7 +18,7 @@
     <header>
       <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
           <!-- <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5> -->
-          <a class="my-0 mr-md-auto font-weight-normal" href="#">
+          <a class="my-0 mr-md-auto font-weight-normal" href="home.html">
             <img src="http://www.bestfreewebresources.com/wp-content/uploads/2012/01/vehicle-logo-49.png" width="115" height="85" alt="car logo">
           </a>
           <!-- <nav class="my-2 my-md-0 mr-md-3">
@@ -28,96 +28,142 @@
           <a class="p-2 text-dark" href="#">Pricing</a>
         </nav> -->
         <form>
-          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign Up</button>
-          <button class="btn btn-danger my-2 my-sm-0" type="submit">Log In</button>
+          <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign Up</button> -->
+          <!-- <button class="btn btn-danger my-2 my-sm-0" type="submit">Log In to Existing Account</button> -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Login In to Existing Account</button>
         </form>
       </div>
     </header>
 
     <!-- SECTION  -->
     <section>
-      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">Some Words</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
       <!-- Forms -->
-      <div class="form-center">
+      <div class="form-center my-5">
         <div class="container">
+
+          <h2 class="display-4">Create an Account</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
           <form class="needs-validation" novalidate>
             <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="John" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Doe" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
               <div class="col-md-12 mb-3">
-                <!-- <label for="validationCustom01">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required> -->
-                <label class="mr-sm-2" for="inlineFormCustomSelect"><h5>CATEGORY</h5></label>
-                <select class="custom-select mr-sm-2" id="validationCustom01" required>
-                  <option value="">Choose...</option>
-                  <option value="1">Car</option>
-                  <option value="2">Motor</option>
-                  <option value="3">Lorry</option>
-                </select>
-                <!-- <div class="valid-feedback">
-                Looks good!
-              </div> -->
-              <div class="invalid-feedback">
-                Please select an option.
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-12 mb-3">
-              <label for="validationCustom02"><h6>PLATE NUMBER</h6></label>
-              <input type="text" class="form-control custom-placeholder" id="validationCustom02" placeholder="E.g.: ABC 9999 , AB 9999 C, AB 999" value="" required>
-              <div class="invalid-feedback">
-                Please provide a valid number.
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
               </div>
             </div>
-          </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
 
-          <div class="form-group">
-            <div class="form-check text-center">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
-              </div>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-block" type="submit">Search Vehicle</button>
-         </form>
        </div>
       </div>
     </section>
     <!--End of SECTION  -->
 
-    <hr />
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-      Launch demo modal
-    </button>
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <!-- <div class="modal-header">
             <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
+          </div> -->
           <div class="modal-body">
-            ...
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="login-form-container my-5">
+              <form>
+
+                <div class="form-group">
+                  <h1 class="h3 my-3 font-weight-normal text-center">Login</h1>
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <a href="#">
+                    <small class="form-text text-muted">Forget password?</small>
+                  </a>
+                </div>
+
+                <!-- <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div> -->
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <a href="register.html"><small>New user? Click here to Sign up</small></a>
+              </form>
+            </div>
           </div>
-          <div class="modal-footer">
+          <!-- <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
+
+    <hr />
 
     <!-- FOOTER -->
     <footer class="footer bg-dark">
