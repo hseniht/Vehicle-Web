@@ -46,21 +46,51 @@
 
           <form class="needs-validation" novalidate>
             <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom01">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="John" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Doe" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
+              <!--Fullname -->
               <div class="col-md-12 mb-3">
+                <label for="validationCustom01">Full Name (as per IC)</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="eg. John" value="John" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Looks invalid!
+                </div>
+              </div>
+              <!--IC No. -->
+              <div class="col-md-12 mb-3">
+                <label for="validationCustom02">IC Number</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="e.g. 012345 67 8912" value="" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Looks invalid!
+                </div>
+              </div>
+              <!--Contact No -->
+              <div class="col-md-12 mb-3">
+                <label for="validationCustom01">Contact No.</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="e.g. 0123456789" value="" required>
+                <div class="valid-feedback">
+                  Looks valid!
+                </div>
+                <div class="invalid-feedback">
+                  Looks invalid!
+                </div>
+              </div>
+              <!--Email address -->
+              <div class="col-md-12 mb-3">
+                <label for="validationCustom01">Email Address</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="e.g. john@email.com " value="" required>
+                <div class="valid-feedback">
+                  Looks valid!
+                </div>
+                <div class="invalid-feedback">
+                  Looks invalid!
+                </div>
+              </div>
+              <!-- <div class="col-md-12 mb-3">
                 <label for="validationCustomUsername">Username</label>
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -71,9 +101,9 @@
                     Please choose a username.
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
-            <div class="form-row">
+            <!-- <div class="form-row">
               <div class="col-md-6 mb-3">
                 <label for="validationCustom03">City</label>
                 <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
@@ -95,7 +125,7 @@
                   Please provide a valid zip.
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="form-group">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
