@@ -1,16 +1,18 @@
 
 /* FOR IMAGES OF VEHILCES
-
+Links & Credits to Author
 https://www.flaticon.com/packs/transport-9
 
 https://www.flaticon.com/packs/transport-17
 
 https://www.flaticon.com/packs/transport-48
+
+https://www.flaticon.com/packs/transport-logos-3
 */
 
 .pricing-header {
     max-width: 700px;
-    min-height: 500px;
+    /* min-height: 700px; */
 }
 
 .box-shadow {
@@ -158,6 +160,19 @@ label > input#others:checked + div img, label > input#others:checked + div h5   
 .hide {
   display: none;
 }
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .card-title.custom {
+    font-size: smaller;
+  }
+
+ }
+
+/* .card-body {
+  min-height: 120px!important;
+
+} */
 
 /* Sticky footer styles
 -------------------------------------------------- */
