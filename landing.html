@@ -41,38 +41,60 @@
         <div class="container">
 
           <!--CARDS -->
-          <div class="row">
-            <div class="col-sm-6 p-3">
+          <!-- <div class="row">
+            <div class="col-6">
               <a href="#">
                 <div id="card-car" class="card text-center card-shadow">
                   <div class="card-body">
                     <img class="w-100" src="images/car.png" alt="car">
-                    <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik
-                    </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
-                    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-                    </div> -->
                     <h5 class="card-title">Car</h5>
                   </div>
                 </div>
               </a>
             </div>
-            <div class="col-sm-6 p-3">
+            <div class="col-6">
               <a href="#">
                 <div id="card-motorcycle" class="card text-center card-shadow">
                   <div class="card-body">
                     <img class="w-100" src="images/motorcycle-white.png" alt="moto">
-                    <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik
-                    </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
-                    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-                    </div> -->
                     <h5 class="card-title">motorcycle</h5>
                   </div>
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
 
-          <form class="needs-validation" novalidate>
+          <!-- test new labels-->
+          <div class="row">
+            <div class="col-3">
+              <label>
+                <input type="radio" name="fb" value="small" onclick="show1();" />
+                <img class="w-100" src="images/motorcycle.png" alt="moto">
+                 <!-- <img src="http://placehold.it/20x20/35d/fff&text=f"> -->
+              </label>
+            </div>
+            <div class="col-3">
+              <label>
+                <input type="radio" name="fb" value="big"/>
+                <img src="http://placehold.it/40x60/35d/fff&text=f">
+              </label>
+            </div>
+            <div class="col-3">
+              <label>
+                <input id="fb3" type="radio" name="fb" value="med" />
+                <img src="http://placehold.it/40x40/35d/fff&text=f">
+              </label>
+            </div>
+            <div class="col-3">
+              <label>
+                <input id="fb4" type="radio" name="fb" value="long" />
+                <img src="http://placehold.it/60x15/35d/fff&text=f">
+              </label>
+            </div>
+          </div>
+          <!--end of test new labels-->
+
+          <form id="num-plate" class="needs-validation hide" novalidate>
             <div class="form-row">
               <div class="col-md-12 mb-3">
                 <!-- <label for="validationCustom01">First name</label>

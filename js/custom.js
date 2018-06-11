@@ -26,3 +26,13 @@
 // $(window).load(function(){
 //      $('#exampleModalCenter').modal('show');
 // });
+
+function show1(){
+  document.getElementById('num-plate').style.display = 'block';
+}
+
+/*not used*/
+// function show2(){
+//   document.getElementById('num-plate').style.display = 'hidden';
+//   document.getElementById('num-plate2').style.display = 'block';
+// }
