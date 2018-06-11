@@ -83,10 +83,10 @@ footer a {
   -webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
 }
 
-.card-shadow img {
+/* .card-shadow img {
   transition: all .2s ease;
   opacity: 0.7
-}
+} */
 
 #card-car {
   background-color: #E74856;
@@ -96,13 +96,14 @@ footer a {
   background-color: #3498db;
 }
 
+
 /* #card-motorcycle img:hover {
   opacity: 1;
 } */
 
-.card-body:hover img {
+/* .card-body:hover img {
   opacity: 1;
-}
+} */
 
 
 /* custom radio button*/
@@ -115,7 +116,43 @@ label > input + img{ /* IMAGE STYLES */
   border:2px solid transparent;
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:2px solid #f00;
+  border:4px solid #f00;
+
+}
+label > input + div { /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid green;
+}
+label > input:checked + div { /* IMAGE STYLES */
+  cursor:pointer;
+  /* border:5px solid purple; */
+  background-color: peachpuff;
+}
+
+label > input#cars:checked + div { /* IMAGE STYLES */
+  cursor:pointer;
+  /* border:5px solid purple; */
+  background-color: #E74856;
+}
+label > input#motorcycles:checked + div { /* IMAGE STYLES */
+  cursor:pointer;
+  /* border:5px solid purple; */
+  background-color: #17acff;
+}
+label > input#others:checked + div { /* IMAGE STYLES */
+  cursor:pointer;
+  /* border:5px solid purple; */
+  background-color: #00CC6A;
+}
+
+label > input#cars:checked + div img, label > input#cars:checked + div h5   { /* IMAGE STYLES */
+  filter: invert(100%);
+}
+label > input#motorcycles:checked + div img, label > input#motorcycles:checked + div h5   { /* IMAGE STYLES */
+  filter: invert(100%);
+}
+label > input#others:checked + div img, label > input#others:checked + div h5   { /* IMAGE STYLES */
+  filter: invert(100%);
 }
 
 .hide {

@@ -66,31 +66,48 @@
 
           <!-- test new labels-->
           <div class="row">
-            <div class="col-3">
+            <div class="col-4">
               <label>
-                <input type="radio" name="fb" value="small" onclick="show1();" />
-                <img class="w-100" src="images/motorcycle.png" alt="moto">
+                <input id="cars" type="radio" name="fb" value="small" onclick="show1();" />
+                  <div class="card text-center card-shadow">
+                    <div class="card-body">
+                      <img class="w-100" src="images/car.png" alt="moto">
+                      <h5 class="card-title">Car</h5>
+                    </div>
+                  </div>
                  <!-- <img src="http://placehold.it/20x20/35d/fff&text=f"> -->
               </label>
             </div>
-            <div class="col-3">
+            <div class="col-4">
               <label>
-                <input type="radio" name="fb" value="big"/>
-                <img src="http://placehold.it/40x60/35d/fff&text=f">
+                <input id="motorcycles" type="radio" name="fb" value="big" onclick="show1();"/>
+                  <div class="card text-center card-shadow">
+                    <div class="card-body">
+                      <img class="w-100" src="images/motorcycle.png" alt="moto">
+                      <h5 class="card-title">Moto</h5>
+                    </div>
+                  </div>
+                <!-- <img src="http://placehold.it/40x60/35d/fff&text=f"> -->
               </label>
             </div>
-            <div class="col-3">
+            <div class="col-4">
               <label>
-                <input id="fb3" type="radio" name="fb" value="med" />
-                <img src="http://placehold.it/40x40/35d/fff&text=f">
+                <input id="others" type="radio" name="fb" value="med" onclick="show1();" />
+                  <div class="card text-center card-shadow">
+                    <div class="card-body">
+                      <img class="w-100" src="images/lorry.png" alt="moto">
+                      <h5 class="card-title">Others</h5>
+                    </div>
+                  </div>
+                <!-- <img src="http://placehold.it/40x40/35d/fff&text=f"> -->
               </label>
             </div>
-            <div class="col-3">
+            <!-- <div class="col-3">
               <label>
                 <input id="fb4" type="radio" name="fb" value="long" />
                 <img src="http://placehold.it/60x15/35d/fff&text=f">
               </label>
-            </div>
+            </div> -->
           </div>
           <!--end of test new labels-->
 
