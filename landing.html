@@ -135,7 +135,7 @@
                 </div>
               </div> -->
               <div class="col-md-12 mb-3">
-                <label for="validationCustom02"><h6>PLATE NUMBER</h6></label>
+                <label for="validationCustom02"><h6>PLATE NUMBER (VEHREG)</h6></label>
                 <input type="text" class="form-control custom-placeholder" id="validationCustom02" placeholder="E.g.: ABC 9999 , AB 9999 C, AB 999" value="" required>
                 <div class="invalid-feedback">
                   Please provide a valid number.
@@ -143,8 +143,42 @@
               </div>
            </div>
 
-          <button class="btn btn-primary btn-block" type="submit">Search Vehicle</button>
+          <button id="showtable" class="btn btn-primary btn-block" type="reset">Search Vehicle</button>
+
          </form>
+
+         <!--table -->
+         <table class="table table-hover hide">
+           <thead>
+             <tr>
+               <th scope="col">#</th>
+               <th scope="col">VEHREG</th>
+               <th scope="col">DESCRIPTION</th>
+               <th scope="col">MTNINARR</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">1</th>
+               <td>CCT1577</td>
+               <td>MITSUBISHI TRITON</td>
+               <td>WOff</td>
+             </tr>
+             <!-- <tr>
+               <th scope="row">2</th>
+               <td>test1</td>
+               <td>Thornton</td>
+               <td>@fat</td>
+             </tr>
+             <tr>
+               <th scope="row">3</th>
+               <td colspan="2">test 3</td>
+               <td>@twitter</td>
+             </tr> -->
+           </tbody>
+         </table>
+         <!--end of table -->
+
        </div>
       </div>
     </section>

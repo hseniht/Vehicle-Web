@@ -36,3 +36,12 @@ function show1(){
 //   document.getElementById('num-plate').style.display = 'hidden';
 //   document.getElementById('num-plate2').style.display = 'block';
 // }
+
+$(document).ready(function(){
+    $("#hidetable").click(function(){
+        $("table").hide();
+    });
+    $("#showtable").click(function(){
+        $("table").show();
+    });
+});
