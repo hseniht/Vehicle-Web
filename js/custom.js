@@ -38,10 +38,15 @@ function show1(){
 // }
 
 $(document).ready(function(){
+    $("#showtable").click(function(){
+      $("table").show();
+      $("#hidetable").show();
+      $("#showtable").hide();
+    });
     $("#hidetable").click(function(){
+        $("#showtable").show();
+        $("#hidetable").hide();
         $("table").hide();
     });
-    $("#showtable").click(function(){
-        $("table").show();
-    });
+
 });
