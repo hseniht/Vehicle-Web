@@ -99,3 +99,17 @@ var jsonObj = [{
 
 console.log(jsonObj);
 console.log(jsonObj[1].visitor_id);
+
+
+$(document).ready(function(){
+  $.ajax({
+    url:"data.json",
+    dataType:"json",
+    success:function(data){
+      $(data.users)each(function(index, value){
+        var record="<tr><td>"+(index+1)+"<td><td>"+value.VEHREG+"<td><td>"+value.DSCPTL+"<td><td>"+value.MTNINARR+"</td></tr>";
+        $("table").append(record);
+      });
+    }
+  });
+});
