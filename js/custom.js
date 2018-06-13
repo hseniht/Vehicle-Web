@@ -99,6 +99,26 @@ $.ajax({
              }).appendTo( "#jsonlist2" );
         });
 
+        //TEST for input
+
+        $("#jsonbtn3").click(function(){
+
+          var keyedValue = $('#inputvalue').val();
+
+            console.log(keyedValue);
+
+
+              $.each( data, function( key, value ) {
+                if (keyedValue === value.VEHREG) {
+                  console.log("its a match!");
+                  $("#jsonlist3").append( "<li>" + value.VEHREG + "</li>" );
+                }
+                else {
+                  console.log("not a match!");
+                }
+              });
+        });
+
   }
 
 });
