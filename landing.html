@@ -150,6 +150,7 @@
            </tbody>
          </table>
          <!--end of table -->
+
          <button id="hidetable" class="btn btn-success btn-block hide" type="reset">Search Again <br /><i class="fas fa-sync-alt"></i></button>
 
        </div>
@@ -163,6 +164,10 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
       Search Vehicle (Demo)
     </button>
+
+    <p>JMT7569</p>
+    <p>WSE5160</p>
+    <p>DBL9929</p>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -228,11 +233,20 @@
           </div>
 
           <div class="col-4">
-            <input id="inputvalue" class="form-control" type="text" placeholder="Default input">
-            <button type="button" class="btn btn-warning" id="jsonbtn3" >TEST Ajax</button>
-            <ul id="jsonlist3">
+            <!-- <input id="inputvalue" class="form-control" type="text" placeholder="Default input"> -->
+            <div class="mb-3">
+              <label for="validationCustom02"><h6>PLATE NUMBER (VEHREG)</h6></label>
+              <input id="inputvalue" type="text" class="form-control custom-placeholder" id="validationCustom02" placeholder="E.g.: ABC 9999 , AB 9999 C, AB 999" value="" required>
+              <div class="invalid-feedback">
+                Please provide a valid number.
+              </div>
+            </div>
+            <button type="reset" class="btn btn-warning btn-block" id="jsonbtn3" >TEST Ajax</button>
 
-            </ul>
+            <div id="jsonlist3">
+
+            </div>
+
           </div>
         </div>
       </div>
