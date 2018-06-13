@@ -18,7 +18,6 @@
   }, false);
 })();
 
-
 // $("form").on('submit', function(){
 //    $('.exampleModalCenter').show();
 // });
@@ -52,7 +51,7 @@ $(document).ready(function(){
 });
 
 
-/*test json */
+/*TEST Json method*/
 
 $("#jsonbtn").click(function(){
 
@@ -65,14 +64,41 @@ $("#jsonbtn").click(function(){
 
 });
 
-$.getJSON( "data.json", function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val.DSCPTL + "</li>" );
-  });
+// Alternate way
+// $.getJSON( "data.json", function( data ) {
+//   var items = [];
+//   $.each( data, function( key, val ) {
+//     items.push( "<li id='" + key + "'>" + val.DSCPTL + "</li>" );
+//   });
+//
+//   $( "<ul/>", {
+//     "class": "my-new-list",
+//     html: items.join( "" )
+//   }).appendTo( "#jsonlist2" );
+// });
 
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "#jsonlist2" );
+/* TEST Ajax method*/
+
+$.ajax({
+  url: "data.json",
+  dataType: "json",
+  type: "get",
+  cache: false,
+  success: function(data){
+
+      $("#jsonbtn2").click(function(){
+
+          var items =[];
+          $.each( data, function( key, val ) {
+               items.push( "<li id='" + key + "'>" + val.DSCPTL + "</li>" );
+             });
+
+             $( "<ul/>", {
+               "class": "my-new-list",
+               html: items.join( "" )
+             }).appendTo( "#jsonlist2" );
+        });
+
+  }
+
 });
