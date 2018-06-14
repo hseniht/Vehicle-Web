@@ -48,6 +48,14 @@ $(document).ready(function(){
         $("table").hide();
     });
 
+    //new TEST
+    $("#jsonbtn4").click(function(){
+        $("#jsonbtn3").show();
+        $("#jsonbtn4").hide();
+        $("#table-result").hide();
+        $("#inputvalue").show();
+    });
+
 });
 
 
@@ -78,6 +86,8 @@ $("#jsonbtn").click(function(){
 // });
 
 /* TEST Ajax method*/
+
+$("#table-result").hide();
 
 $.ajax({
   url: "data.json",
@@ -115,6 +125,8 @@ $.ajax({
               $(".data-VEHREG").replaceWith( "<td class=\"data-VEHREG\">" + value.VEHREG + "</td>" );
               $(".data-DSCPTL").replaceWith( "<td class=\"data-DSCPTL\">" + value.DSCPTL + "</td>" );
               $(".data-MTNINARR").replaceWith( "<td class=\"data-MTNINARR\">" + value.MTNINARR + "</td>" );
+              $("#table-result").show();
+              return false; //to break loop
             }
             else {
               console.log("not a match!");
@@ -123,8 +135,12 @@ $.ajax({
           });
           //reset input value
           $('#inputvalue').val('');
+          console.log("after if else");
           // document.getElementById("num-plate").reset();
 
+          $("#jsonbtn3").hide();
+          $("#jsonbtn4").show();
+          $("#inputvalue").hide();
 
         });
 

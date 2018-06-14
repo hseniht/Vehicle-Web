@@ -138,6 +138,7 @@
     <p>JMT7569</p>
     <p>WSE5160</p>
     <p>DBL9929</p>
+    <p>PMD4270</p>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -209,8 +210,8 @@
                   <div class="col-md-12 mb-3">
                     <label for="validationCustom02"><h6>PLATE NUMBER (VEHREG)</h6></label>
                     <input id="inputvalue" type="text" class="form-control custom-placeholder" id="validationCustom02" placeholder="E.g.: ABC 9999 , AB 9999 C, AB 999"  required>
-                    <div class="invalid-feedback hide">
-                      Please provide a valid number.
+                    <div class="invalid-feedback">
+                      No record found on the keyed input. Please try another.
                     </div>
                   </div>
                 </div>
@@ -222,7 +223,7 @@
             </div>
 
             <!--table 2 -->
-            <table class="table table-hover">
+            <table id="table-result" class="table table-hover">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -241,6 +242,7 @@
               </tbody>
             </table>
             <!--end of table 2 -->
+            <button id="jsonbtn4" class="btn btn-success btn-block hide" type="reset">Search Again <br /><i class="fas fa-sync-alt"></i></button>
 
           </div>
         </div>
