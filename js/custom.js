@@ -110,7 +110,10 @@ $.ajax({
           $.each( data, function( key, value ) {
             if (keyedValue === value.VEHREG) {
               console.log("its a match!");
-              $("#jsonlist3").replaceWith( "<div id=\"jsonlist3\">" + value.VEHREG +" | "+ value.DSCPTL + "</div>" );
+              $("#jsonlist3.inner").replaceWith( "<div id=\"jsonlist3\">" + value.VEHREG +" | "+ value.DSCPTL + "</div>" );
+              $(".data-VEHREG").replaceWith( "<td class=\"data-VEHREG\">" + value.VEHREG + "</td>" );
+              $(".data-DSCPTL").replaceWith( "<td class=\"data-DSCPTL\">" + value.DSCPTL + "</td>" );
+              $(".data-MTNINARR").replaceWith( "<td class=\"data-MTNINARR\">" + value.MTNINARR + "</td>" );
             }
             else {
               console.log("not a match!");
