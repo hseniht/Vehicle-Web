@@ -37,11 +37,15 @@ function show1(){
 // }
 
 $(document).ready(function(){
+
+    $("#form-vehicle").hide(); //hide form table initially
+
     $("#showtable").click(function(){
       $("table").show();
       $("#hidetable").show();
       $("#showtable").hide();
     });
+
     $("#hidetable").click(function(){
         $("#showtable").show();
         $("#hidetable").hide();
@@ -49,9 +53,9 @@ $(document).ready(function(){
     });
 
     //new TEST
-    $("#jsonbtn4").click(function(){
+    $("#search-again").click(function(){
         $("#jsonbtn3").show();
-        $("#jsonbtn4").hide();
+        $("#search-again").hide();
         $("#table-result").hide();
         $("#inputvalue").show();
     });
@@ -60,6 +64,18 @@ $(document).ready(function(){
 
 
 /*TEST Json method*/
+
+$("#cars,#motorcycles,#others").click(function(){
+    $("#form-vehicle").show();
+});
+//or animate
+// $("#cars,#motorcycles,#others").click(function(){
+//     $("#form-vehicle").toggle("slow");
+// });
+
+// $("#cars").change(function(){
+//   $("#form-vehicle").hide();
+// });
 
 $("#jsonbtn").click(function(){
 
@@ -139,7 +155,7 @@ $.ajax({
           // document.getElementById("num-plate").reset();
 
           $("#jsonbtn3").hide();
-          $("#jsonbtn4").show();
+          $("#search-again").show();
           $("#inputvalue").hide();
 
         });

@@ -157,6 +157,10 @@ label > input#others:checked + div img, label > input#others:checked + div h5   
   display: none;
 }
 
+#table-result {
+  zoom:0.8;
+}
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   .card-title.custom {

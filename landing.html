@@ -37,7 +37,7 @@
     <!-- SECTION  -->
     <section>
       <!-- Forms -->
-      <div class="form-center">
+      <div class="form-center mb-5">
         <div class="container">
 
           <!-- test new labels-->
@@ -59,7 +59,7 @@
             </div>
             <div class="col-4">
               <label>
-                <input id="motorcycles" type="radio" name="fb" value="big" onclick="show1();"/>
+                <input id="motorcycles" type="radio" name="fb" value="big"/>
                   <div class="card text-center card-shadow">
                     <div class="card-body">
                       <img class="w-100" src="images/motorcycle.png" alt="moto">
@@ -71,7 +71,7 @@
             </div>
             <div class="col-4">
               <label>
-                <input id="others" type="radio" name="fb" value="med" onclick="show1();" />
+                <input id="others" type="radio" name="fb" value="med"/>
                   <div class="card text-center card-shadow">
                     <div class="card-body">
                       <img class="w-100" src="images/lorry.png" alt="moto">
@@ -85,43 +85,43 @@
 
           <!--end of test new labels-->
 
-          <form id="num-plate" class="needs-validation hide" novalidate>
+          <form id="form-vehicle" class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-12 mb-3">
                 <label for="validationCustom02"><h6>PLATE NUMBER (VEHREG)</h6></label>
-                <input type="text" class="form-control custom-placeholder" id="validationCustom02" placeholder="E.g.: ABC 9999 , AB 9999 C, AB 999" value="" required>
+                <input id="inputvalue" type="text" class="form-control custom-placeholder" id="validationCustom02" placeholder="E.g.: ABC 9999 , AB 9999 C, AB 999"  required>
                 <div class="invalid-feedback">
-                  Please provide a valid number.
+                  No record found on the keyed input. Please try another.
                 </div>
               </div>
-           </div>
-
-          <button id="showtable" class="btn btn-primary btn-block" type="submit">Search Vehicle</button>
-
-         </form>
+            </div>
+            <button type="submit" class="btn btn-warning btn-block" id="jsonbtn3" >Search Vehicle</button>
+          </form>
 
          <!--table -->
-         <table class="table table-hover hide">
-           <thead>
-             <tr>
-               <th scope="col">#</th>
-               <th scope="col">VEHREG</th>
-               <th scope="col">DESCRIPTION</th>
-               <th scope="col">MTNINARR</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <th scope="row">1</th>
-               <td>CCT1577</td>
-               <td>MITSUBISHI TRITON</td>
-               <td>WOff</td>
-             </tr>
-           </tbody>
-         </table>
-         <!--end of table -->
+         <div>
+           <table id="table-result" class="table table-hover">
+             <thead>
+               <tr>
+                 <th scope="col">#</th>
+                 <th scope="col">VEHREG</th>
+                 <th scope="col">DESCRIPTION</th>
+                 <th scope="col">MTNINARR</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">1</th>
+                 <td class="data-VEHREG">CCT1577</td>
+                 <td class="data-DSCPTL">MITSUBISHI TRITON</td>
+                 <td class="data-MTNINARR">WOff</td>
+               </tr>
+             </tbody>
+           </table>
 
-         <button id="hidetable" class="btn btn-success btn-block hide" type="reset">Search Again <br /><i class="fas fa-sync-alt"></i></button>
+         </div>
+         <!--end of table -->
+         <button id="search-again" class="btn btn-success btn-block hide" type="reset">Search Again <br /><i class="fas fa-sync-alt"></i></button>
 
        </div>
       </div>
@@ -129,6 +129,9 @@
     <!--End of SECTION  -->
 
     <hr />
+
+<div style="display:none;">
+  <!--test area -->
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
@@ -184,7 +187,6 @@
       </div>
     </div>
 
-    <!--test area -->
 
     <div>
       <div class="container">
@@ -205,7 +207,7 @@
 
           <div class="col-4">
             <!-- <input id="inputvalue" class="form-control" type="text" placeholder="Default input"> -->
-              <form id="num-plate" class="needs-validation" novalidate>
+              <form id="form-vehicle" class="needs-validation" novalidate>
                 <div class="form-row">
                   <div class="col-md-12 mb-3">
                     <label for="validationCustom02"><h6>PLATE NUMBER (VEHREG)</h6></label>
@@ -242,7 +244,7 @@
               </tbody>
             </table>
             <!--end of table 2 -->
-            <button id="jsonbtn4" class="btn btn-success btn-block hide" type="reset">Search Again <br /><i class="fas fa-sync-alt"></i></button>
+            <button id="search-again" class="btn btn-success btn-block hide" type="reset">Search Again <br /><i class="fas fa-sync-alt"></i></button>
 
           </div>
         </div>
@@ -250,7 +252,7 @@
     </div>
 
     <!--end of test area -->
-
+</div>
     <!-- FOOTER -->
     <footer class="footer bg-dark">
       <div class="container">
