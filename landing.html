@@ -47,7 +47,7 @@
           <div class="row">
             <div class="col-4">
               <label>
-                <input id="cars" type="radio" name="fb" value="small" onclick="show1();" />
+                <input id="cars" type="radio" name="fb" value="small" />
                   <div class="card text-center card-shadow">
                     <div class="card-body">
                       <img class="w-100" src="images/car.png" alt="moto">
@@ -96,7 +96,7 @@
               </div>
            </div>
 
-          <button id="showtable" class="btn btn-primary btn-block" type="reset">Search Vehicle</button>
+          <button id="showtable" class="btn btn-primary btn-block" type="submit">Search Vehicle</button>
 
          </form>
 
@@ -204,14 +204,18 @@
 
           <div class="col-4">
             <!-- <input id="inputvalue" class="form-control" type="text" placeholder="Default input"> -->
-            <div class="mb-3">
-              <label for="validationCustom02"><h6>PLATE NUMBER (VEHREG)</h6></label>
-              <input id="inputvalue" type="text" class="form-control custom-placeholder" id="validationCustom02" placeholder="E.g.: ABC 9999 , AB 9999 C, AB 999" value="" required>
-              <div class="invalid-feedback">
-                Please provide a valid number.
-              </div>
-            </div>
-            <button type="reset" class="btn btn-warning btn-block" id="jsonbtn3" >TEST Ajax</button>
+              <form id="num-plate" class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationCustom02"><h6>PLATE NUMBER (VEHREG)</h6></label>
+                    <input id="inputvalue" type="text" class="form-control custom-placeholder" id="validationCustom02" placeholder="E.g.: ABC 9999 , AB 9999 C, AB 999"  required>
+                    <div class="invalid-feedback hide">
+                      Please provide a valid number.
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-warning btn-block" id="jsonbtn3" >TEST Ajax</button>
+              </form>
 
             <div id="jsonlist3">
 

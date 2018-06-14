@@ -110,6 +110,7 @@ $.ajax({
           $.each( data, function( key, value ) {
             if (keyedValue === value.VEHREG) {
               console.log("its a match!");
+              $(".invalid-feedback").hide();
               $("#jsonlist3.inner").replaceWith( "<div id=\"jsonlist3\">" + value.VEHREG +" | "+ value.DSCPTL + "</div>" );
               $(".data-VEHREG").replaceWith( "<td class=\"data-VEHREG\">" + value.VEHREG + "</td>" );
               $(".data-DSCPTL").replaceWith( "<td class=\"data-DSCPTL\">" + value.DSCPTL + "</td>" );
@@ -117,13 +118,16 @@ $.ajax({
             }
             else {
               console.log("not a match!");
+                $(".invalid-feedback").show();
             }
           });
-
+          //reset input value
           $('#inputvalue').val('');
+          // document.getElementById("num-plate").reset();
+
 
         });
 
+  //end of Ajax success
   }
-
-});
+}); //end of Ajax

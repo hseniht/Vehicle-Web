@@ -90,14 +90,6 @@ footer a {
   opacity: 0.7
 } */
 
-#card-car {
-  background-color: #E74856;
-}
-
-#card-motorcycle {
-  background-color: #3498db;
-}
-
 
 /* #card-motorcycle img:hover {
   opacity: 1;
@@ -136,6 +128,10 @@ label > input#cars:checked + div { /* IMAGE STYLES */
   /* border:5px solid purple; */
   background-color: #E74856;
 }
+/* label > input#cars:not(checked) + div {
+  cursor:pointer;
+  background-color: #fff;
+} */
 label > input#motorcycles:checked + div { /* IMAGE STYLES */
   cursor:pointer;
   /* border:5px solid purple; */
