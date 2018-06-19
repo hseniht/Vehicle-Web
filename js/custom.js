@@ -36,6 +36,7 @@ function show1(){
 //   document.getElementById('num-plate2').style.display = 'block';
 // }
 
+//jQuery Scripts
 $(document).ready(function(){
 
     $("#form-vehicle").hide(); //hide form table initially
