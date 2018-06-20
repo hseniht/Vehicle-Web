@@ -14,6 +14,11 @@ https://www.flaticon.com/packs/transport-logos-3
   /* min-height: 700px; */
 }
 
+.border-custom-base {
+  border: 2px solid rgba(0, 0, 0, 0.10);
+  border-radius: 10px;
+}
+
 .box-shadow {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
 }
