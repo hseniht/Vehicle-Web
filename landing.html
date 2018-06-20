@@ -47,7 +47,7 @@
               <label>
                 <input id="cars" type="radio" name="fb" value="small" />
                   <div class="card text-center card-shadow">
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <img class="w-100" src="images/car.png" alt="moto">
                     </div>
                     <h5 class="card-title custom">Car</h5>
@@ -59,7 +59,7 @@
               <label>
                 <input id="motorcycles" type="radio" name="fb" value="big"/>
                   <div class="card text-center card-shadow">
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <img class="w-100" src="images/motorcycle.png" alt="moto">
                     </div>
                     <h5 class="card-title custom">Moto</h5>
@@ -71,7 +71,7 @@
               <label>
                 <input id="others" type="radio" name="fb" value="med"/>
                   <div class="card text-center card-shadow">
-                    <div class="card-body">
+                    <div class="card-body p-2">
                       <img class="w-100" src="images/lorry.png" alt="moto">
                     </div>
                     <h5 class="card-title custom">Others</h5>
@@ -92,11 +92,11 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-warning btn-block" id="jsonbtn3" >Search Vehicle</button>
+            <button type="submit" class="btn btn-warning btn-block text-white font-custom-large" id="jsonbtn3">Search Vehicle</button>
           </form>
 
          <!--Result table -->
-         <div>
+         <div style="overflow-y:hidden">
            <table id="table-result" class="table table-hover">
              <thead>
                <tr>
@@ -118,7 +118,7 @@
          </div>
          <!--end of Result table -->
 
-         <button id="search-again" class="btn btn-success btn-block hide" type="reset">Search Again <br /><i class="fas fa-sync-alt"></i></button>
+         <button id="search-again" class="btn btn-success btn-block text-white font-custom-large hide" type="reset">Search Again <br /><i class="fas fa-sync-alt"></i></button>
 
        </div>
       </div>

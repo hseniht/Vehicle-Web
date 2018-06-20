@@ -9,6 +9,16 @@ https://www.flaticon.com/packs/transport-48
 https://www.flaticon.com/packs/transport-logos-3
 */
 
+
+/*=== FONTS ===*/
+
+.font-custom-large {
+  font-size: larger;
+font-weight: bold;
+}
+
+/*=== End of FONTS ===*/
+
 .hero-header {
   max-width: 700px;
   /* min-height: 700px; */
@@ -166,6 +176,10 @@ label>input#others:checked+div img, label>input#others:checked+div h5 {
 @media (max-width: 575.98px) {
   .card-title.custom {
     font-size: smaller;
+  }
+
+  .card-body.custom-padding {
+    padding: 10px;
   }
 }
 
