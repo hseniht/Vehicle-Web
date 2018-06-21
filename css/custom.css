@@ -10,14 +10,18 @@ https://www.flaticon.com/packs/transport-logos-3
 */
 
 
-/*=== FONTS ===*/
+/*============= FONTS =============*/
 
 .font-custom-large {
   font-size: larger;
-font-weight: bold;
+  font-weight: bold;
 }
 
-/*=== End of FONTS ===*/
+/*========== End of FONTS ==========*/
+
+.bg-transparent-2 {
+  background-color: rgba(0,0,0,.075);
+}
 
 .hero-header {
   max-width: 700px;
@@ -74,7 +78,7 @@ font-weight: bold;
   margin: 0 auto;
 } */
 
-/* ==== For CARD ====*/
+/* =================================== For CARD =======================================*/
 
 .card-shadow {
   -webkit-transition: all .3s ease;
@@ -188,7 +192,13 @@ label>input#others:checked+div img, label>input#others:checked+div h5 {
 
 } */
 
-/* ===== FOOTER ==== */
+/* =========================== End of  For CARD ===================================*/
+
+
+
+
+
+/* ==================== FOOTER ==================== */
 
 footer a {
   color: white;
