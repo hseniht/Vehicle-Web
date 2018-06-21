@@ -61,6 +61,16 @@ $(document).ready(function(){
         $("#inputvalue").show();
     });
 
+    //Registration page Login notification slide down
+
+    if ( $( "#special1" ).is( ":hidden" ) ) {
+      $( "#special2" ).slideDown(1000);
+      console.log("login notification - visible, slided down");
+    } else {
+      $( "#special2" ).hide();
+      console.log("login notification - hidden");
+    }
+
 });
 
 

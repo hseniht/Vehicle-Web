@@ -23,6 +23,10 @@ https://www.flaticon.com/packs/transport-logos-3
   background-color: rgba(0,0,0,.075);
 }
 
+.bg-transparent-primary {
+  background-color: rgba(0,123,255,.5)!important;
+}
+
 .hero-header {
   max-width: 700px;
   /* min-height: 700px; */
@@ -34,7 +38,7 @@ https://www.flaticon.com/packs/transport-logos-3
 }
 
 .box-shadow {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 0.25rem 2.75rem rgba(0, 0, 0, .25);
 }
 
 .form-center {
@@ -171,6 +175,10 @@ label>input#others:checked+div img, label>input#others:checked+div h5 {
   display: none;
 }
 
+.hide-onDesktop {
+  display: none;
+}
+
 #table-result {
   zoom: 0.8;
 }
@@ -185,7 +193,22 @@ label>input#others:checked+div img, label>input#others:checked+div h5 {
   .card-body.custom-padding {
     padding: 10px;
   }
+
+
 }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+  .hide-onMobile {
+    display: none;
+  }
+
+  /* .hide-onDesktop {
+    display: none;
+  } */
+
+ }
 
 /* .card-body {
   min-height: 120px!important;
