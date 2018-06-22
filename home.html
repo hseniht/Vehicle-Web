@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
     <title>Home - Welcome</title>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar-scroll").style.top = "0";
+          } else {
+            document.getElementById("navbar-scroll").style.top = "-150px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
   </head>
   <body>
     <header id="navbar-scroll" class="border-bottom box-shadow bg-white">
