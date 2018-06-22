@@ -59,6 +59,7 @@ $(document).ready(function(){
         $("#search-again").hide();
         $("#table-result").hide();
         $("#inputvalue").show();
+        $(".invalid-feedback").hide();
     });
 
     //Registration page Login notification slide down
