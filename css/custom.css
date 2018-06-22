@@ -19,6 +19,17 @@ https://www.flaticon.com/packs/transport-logos-3
 
 /*========== End of FONTS ==========*/
 
+#navbar-scroll {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display:block;
+  transition: top 0.5s;
+  z-index: 1000;
+}
+
+
 .bg-transparent-2 {
   background-color: rgba(0,0,0,.075);
 }

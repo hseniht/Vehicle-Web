@@ -36,6 +36,19 @@ function show1(){
 //   document.getElementById('num-plate2').style.display = 'block';
 // }
 
+
+// Scrolling Header Navbar
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar-scroll").style.top = "0";
+  } else {
+    document.getElementById("navbar-scroll").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 //jQuery Scripts
 $(document).ready(function(){
 
@@ -72,9 +85,32 @@ $(document).ready(function(){
       console.log("login notification - hidden");
     }
 
+
+    $('#logos > div img').on('click mouseover', function () {
+      $( this ).fadeTo( "fast" , 0.5, function() {
+      });
+    });
+
+    $('#logos > div img').on('click mouseout', function () {
+      $( this ).fadeTo( "fast" , 1, function() {
+      });
+    });
+
+    // $('#navbar-scroll').hide();
+    //
+    // $(function(){
+    //   $(window).scroll(function(){
+    //     if ($(this)scrollTop()>100) {
+    //       $('#navbar-scroll').fadeIn();
+    //     } else {
+    //       $('#navbar-scroll').fadeOut();
+    //     }
+    //   });
+    // });
+
 });
 
-
+/*========================================================================FOR TESTING PURPOSES ================================================================================*/
 /*TEST Json method*/
 
 $("#cars,#motorcycles,#others").click(function(){
