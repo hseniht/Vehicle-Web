@@ -27,7 +27,7 @@
           <a class="p-2 text-dark" href="#">Support</a>
           <a class="p-2 text-dark" href="#">Pricing</a>
         </nav> -->
-        <form>
+        <form id="signup">
           <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign Up</button> -->
           <!-- <button class="btn btn-danger my-2 my-sm-0" type="submit">Log In to Existing Account</button> -->
           <button id="special1" type="button" class="btn btn-primary hide-onMobile" data-toggle="modal" data-target="#exampleModalCenter">
@@ -50,8 +50,8 @@
       <div class="form-center my-5">
         <div class="container border-custom-base py-3 bg-white">
 
-          <h2 class="display-4">Create an Account</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <h2 class="display-4 mb-5">Create an Account</h2>
+          <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p> -->
 
           <form class="needs-validation" novalidate>
             <div class="form-row">
@@ -99,42 +99,9 @@
                   Looks invalid!
                 </div>
               </div>
-              <!-- <div class="col-md-12 mb-3">
-                <label for="validationCustomUsername">Username</label>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  </div>
-                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-                  <div class="invalid-feedback">
-                    Please choose a username.
-                  </div>
-                </div>
-              </div> -->
+
             </div>
-            <!-- <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom03">City</label>
-                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-                <div class="invalid-feedback">
-                  Please provide a valid city.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom04">State</label>
-                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-                <div class="invalid-feedback">
-                  Please provide a valid state.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-                <div class="invalid-feedback">
-                  Please provide a valid zip.
-                </div>
-              </div>
-            </div> -->
+
             <div class="form-group">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -190,7 +157,7 @@
                   <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div> -->
                 <button type="submit" class="btn btn-primary btn-block">Login</button>
-                <a href="register.html"><small>New user? Click here to Sign up</small></a>
+                <a href="register.html#signup"><small>New user? Click here to Sign up</small></a>
               </form>
             </div>
           </div>

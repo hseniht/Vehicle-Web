@@ -218,7 +218,12 @@ label>input#others:checked+div img, label>input#others:checked+div h5 {
   /* .hide-onDesktop {
     display: none;
   } */
+  #header-landing.border-bottom.box-shadow{
+    background-color: #ececec!important;
+    box-shadow:unset!important;
+    border-bottom: 0px!important;
 
+  }
  }
 
 /* .card-body {
